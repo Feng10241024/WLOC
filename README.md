@@ -54,7 +54,7 @@ WLOC 是一款面向 Apple 平台开发者的定位测试工具，主要用于�
 ./scripts/test.sh
 ```
 
-需要 macOS 14 或更高版本及 Swift 6 或更高版本。脚本运行 macOS 上的逻辑测试，覆盖搜索状态、失败重试、过期响应处理，以及收藏的保存、读取、删除、去重和输入校验。测试使用独立的 UserDefaults 测试域和可控搜索服务，不改动真实收藏，不发起线上搜索。
+需要完整 Xcode 26 或更新版本及其支持的 macOS；项目使用新版 MapKit SDK，GitHub Actions 固定选择 Xcode 26.3，避免默认旧版工具链无法编译。脚本运行 macOS 上的逻辑测试，覆盖搜索状态、失败重试、过期响应处理，以及收藏的保存、读取、删除、去重和输入校验。测试使用独立的 UserDefaults 测试域和可控搜索服务，不改动真实收藏，不发起线上搜索。
 
 同一组测试已加入 Xcode 的 `WLOCTests` Target 和 `WLOC` Scheme。完整 iOS 编译、界面操作和 VPN 行为仍需要完整 Xcode 及测试设备；macOS 逻辑测试不能代替这些验证。
 
@@ -71,7 +71,7 @@ WLOC 是一款面向 Apple 平台开发者的定位测试工具，主要用于�
 ### 系统要求
 
 - iOS 16 或更高版本。
-- 能够打开并构建本工程的 Xcode 版本。
+- Xcode 26 或更新版本；公开 IPA 使用 Xcode 27 编译，最低 iOS 版本仍为 16.0。
 - Apple Developer 账号及可用于 Network Extension 的签名权限。
 - 一台真实 iOS 测试设备。模拟器无法完整验证 Packet Tunnel、VPN 配置、证书信任和真实定位行为。
 
@@ -168,7 +168,7 @@ The project contains an iOS host application and a Packet Tunnel Extension. Afte
 ### Requirements
 
 - iOS 16 or later.
-- A version of Xcode capable of opening and building the project.
+- Xcode 26 or later. The public IPA is built with Xcode 27 and still targets iOS 16.0 or later.
 - An Apple Developer account with signing permissions for Network Extensions.
 - A physical iOS test device. The Simulator cannot fully validate Packet Tunnel behavior, VPN configuration, certificate trust, or real-world location behavior.
 
