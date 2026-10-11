@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Modified from xiaobovlog/WLOC for place search, favorites, and public release. See NOTICE. -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppGroupIdentifier</key>
+	<string>$(INFOPLIST_KEY_AppGroupIdentifier)</string>
+	<key>TunnelProviderBundleIdentifier</key>
+	<string>$(INFOPLIST_KEY_TunnelProviderBundleIdentifier)</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>shortcuts</string>
+	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>仅在尚未设置测试位置时获取一次当前位置，用于初始化测试坐标。</string>
+</dict>
+</plist>

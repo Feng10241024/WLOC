@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppGroupIdentifier</key>
+	<string>group.com.xx.wloc</string>
+	<key>AuthorizedTestHosts</key>
+	<array>
+		<string>gs-loc.apple.com</string>
+		<string>gs-loc-cn.apple.com</string>
+	</array>
+	<key>TunnelProviderBundleIdentifier</key>
+	<string>com.xx.wloc.PacketTunnel</string>
+	<key>TunnelMode</key>
+	<string>localForwarding</string>
+</dict>
+</plist>

@@ -1,0 +1,17 @@
+WLOC
+
+This distribution is based on xiaobovlog/WLOC:
+https://github.com/xiaobovlog/WLOC
+
+The upstream source is distributed under the Apache License, Version 2.0.
+The original license and source attribution are retained in this distribution.
+
+This distribution adds place search, an independent location favorites tab,
+map/search/coordinate entry, editable names, saved accuracy, explicit location
+application, automated tests, and privacy checks for public releases.
+Modified upstream files carry modification notices. Personal IDE state and
+local development history are not part of this public source snapshot.
+
+Other projects credited by the upstream README:
+https://github.com/Yu9191/wloc
+https://github.com/FFF686868/proxypin-wloc-spoofer

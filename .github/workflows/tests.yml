@@ -1,0 +1,22 @@
+name: Tests and publication privacy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+      - name: Configuration, privacy and location tests
+        run: ./scripts/test.sh
+      - name: Check the complete publishable Git history
+        run: python3 scripts/verify_publication_privacy.py --repository . --ref HEAD
